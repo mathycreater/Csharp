@@ -1,0 +1,14 @@
+ static void Main(string[] args)
+        {
+
+            Console.WriteLine("digite sua senha (senha correta: 123): ");
+            int senha = int.Parse(Console.ReadLine());          
+            while (senha != 123)
+            {
+                Console.WriteLine("senha incorreta, digite novamente");
+                senha = int.Parse(Console.ReadLine());
+                
+            }
+          
+            Console.WriteLine("Senha permitida");
+        }
