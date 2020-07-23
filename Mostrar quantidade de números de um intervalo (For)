@@ -1,0 +1,16 @@
+static void Main(string[] args)
+        {
+            int dentro = 0;
+            int fora = 0;
+            Console.WriteLine("Digite a quantidade de número para revelar quais estão entre 10 e 20: ");
+            int N = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= N; i ++){
+                Console.Write("digite o valor #{0} ", i) ;
+                int valor = int.Parse(Console.ReadLine());
+                if (valor >= 10 && valor <= 20) { dentro += 1; } else if (valor < 0) { valor = -1; } else { fora += 1; }
+
+
+            }
+            Console.WriteLine(dentro + " in");
+            Console.WriteLine(fora + " out");
+        }
