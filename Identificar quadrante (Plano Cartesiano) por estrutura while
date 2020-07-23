@@ -1,0 +1,53 @@
+using System;
+using System.Globalization;
+
+namespace Exercicios_while
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o valor de X no plano cartesiano: ");
+            double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Digite o valor de Y no plano cartesiano: ");
+            double y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
+            while (x != 0 && y != 0)
+            {
+                if (x > 0 && y > 0)
+                {
+                    Console.WriteLine("O valor de x = " + x + ", e o valor de y = " + y + ". O quadrante é o primeiro");
+                    Console.WriteLine("Digite o valor de X no plano cartesiano: ");
+                    x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine("Digite o valor de Y no plano cartesiano: ");
+                    y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                }
+                else if (x > 0 && y < 0)
+                {
+                    Console.WriteLine("O valor de x = " + x + ", e o valor de y = " + y + ". O quadrante é o segundo");
+                    Console.WriteLine("Digite o valor de X no plano cartesiano: ");
+                    x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine("Digite o valor de Y no plano cartesiano: ");
+                    y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                }
+                else if (x < 0 && y < 0)
+                {
+                    Console.WriteLine("O valor de x = " + x + ", e o valor de y = " + y + ". O quadrante é o terceiro");
+                    Console.WriteLine("Digite o valor de X no plano cartesiano: ");
+                    x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine("Digite o valor de Y no plano cartesiano: ");
+                    y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                }
+                else if (x < 0 && y > 0)
+                {
+                    Console.WriteLine("O valor de x = " + x + ", e o valor de y = " + y + ". O quadrante é o quarto");
+                    Console.WriteLine("Digite o valor de X no plano cartesiano: ");
+                    x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine("Digite o valor de Y no plano cartesiano: ");
+                    y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                }
+            }
+            Console.WriteLine("VALOR NULO");
+        }
+    }
+}
